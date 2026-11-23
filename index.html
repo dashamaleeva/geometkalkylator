@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Геометрический калькулятор</title>
+  <link rel="icon" type="image/png" href="ikonka.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="app-header">
+  <div class="header-inner">
+    <div class="brand">
+      <div>
+        <div class="app-title">Геометрический калькулятор</div>
+        <div class="app-subtitle">Всё легко и просто</div>
+      </div>
+    </div>
+    <div class="header-hint">Нажмите на любую фигуру для расчета</div>
+  </div>
+</header>
+<div class="main-layout">
+  <section class="shapes-catalog">
+    <h2 class="section-title">ПЛОСКИЕ ФИГУРЫ</h2>
+    <div class="shapes-grid" id="flatGrid"></div>
+
+    <h2 class="section-title">ОБЪЕМНЫЕ ФИГУРЫ</h2>
+    <div class="shapes-grid" id="solidGrid"></div>
+  </section>
+
+  <aside class="calculator-panel">
+    <div class="calc-card">
+      <div class="calc-header" id="cardTitle">Квадрат</div>
+
+      <div class="preview-area">
+        <div class="diagram-box" id="diagramBox"></div>
+        <div class="formulas-box" id="formulasBox"></div>
+      </div>
+
+      <div class="inputs-container" id="inputsContainer"></div>
+
+      <button class="calc-btn" onclick="calculate()">Выполнить расчет</button>
+
+      <div class="result-box" id="resultBox"></div>
+    </div>
+  </aside>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
